@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu Portfólio</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+                <ul class="nav-links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <button id="theme-toggle" onclick="toggleTheme()">
+                        <span id="theme-icon">🌙</span> Alterar Tema
+                    </button>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>
+                Desenvolvedor Full-Stack com foco em soluções eficientes e
+                inovadoras.
+            </p>
+            <div class="button-container">
+                <button onclick="scrollToSection('about')">Saiba Mais</button>
+
+            </div>
+        </section>
+        <script>
+            function scrollToSection(sectionId) {
+                document
+                    .getElementById(sectionId)
+                    .scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+
+        <div id="about">
+            <h2 id="about-title">Sobre Mim</h2>
+            <div class="about-content">
+                <img
+                    src="55924678.png"
+                    alt="Foto de Nicollas P. Rezende"
+                    class="profile-pic"
+                />
+                <div class="about-text">
+                    <p>
+                        Olá! Eu sou <strong>Nicollas Rezende</strong>, também
+                        conhecido como Nikz — fique à vontade para me chamar
+                        como preferir! Sou um desenvolvedor back-end e
+                        front-end, sempre buscando aprender e explorar novas
+                        tecnologias para oferecer soluções robustas e eficazes.
+                        Atualmente estou cursando Engenharia de Software e tenho
+                        experiência em desenvolvimento web, APIs e automação de
+                        processos.
+                    </p>
+                    <p>Minhas principais habilidades incluem:</p>
+                    <div class="skills">
+                        <span class="skill"
+                            ><i class="fab fa-python"></i> Python</span
+                        >
+                        <span class="skill"
+                            ><i class="fab fa-js-square"></i> JavaScript</span
+                        >
+                        <span class="skill"
+                            ><i class="fas fa-server"></i> Flask</span
+                        >
+                        <span class="skill"
+                            ><i class="fas fa-code-branch"></i> Django</span
+                        >
+                        <span class="skill"
+                            ><i class="fab fa-node"></i> Node.js</span
+                        >
+                    </div>
+                    <a
+                        href="https://github.com/seu-usuario"
+                        class="github-btn"
+                        target="_blank"
+                    >
+                        <i class="fab fa-github"></i> Meu GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h2 id="projects-title">Projetos</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>WPP Bot de Vendas Auto</h3>
+                    <p>Uma solução automatizada para vendas via WhatsApp.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/botvendaswhats/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>SGI-WEB</h3>
+                    <p>Sistema de Gerenciamento de Inventário.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/SGI-WEB/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>IA-RESUM</h3>
+                    <p>Bot de resumo de vídeos.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/AI-VIDEO-RESUM/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Docker Flask</h3>
+                    <p>
+                        Containerização de aplicações Flask utilizando Docker.
+                    </p>
+                    <a
+                        href="https://github.com/NicollasRezende/Docker-Flask/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>PDF Generator</h3>
+                    <p>Um gerador de PDF simples para diversas aplicações.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/PDF-generator/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Numpy Jogo de Conways</h3>
+                    <p>Jogo de Conways usando biblioteca NumPy.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/numpy-jogo-de-conways/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Como Usar Django</h3>
+                    <p>Um Doc que simplifica a utilização de Django.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/DJANGO-COMO-USAR/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Site Loja de Ferramentas</h3>
+                    <p>Um site para uma loja ficticia.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/loja-ferramentas"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Site Aleatório (Aprendendo Front-End)</h3>
+                    <p>Um dos meus primeiros Sites.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/toolshare/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Calculadora de Calorias (Aprendendo Front-End)</h3>
+                    <p>Um projeto feito para um grupo de amigos.</p>
+                    <a
+                        href="https://github.com/NicollasRezende/calcular-calorias"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="card">
+                    <h3>Pokedex</h3>
+                    <p>
+                        Uma aplicação para consultar Pokémons, meu primeiro
+                        projeto com front-end usando APIs.
+                    </p>
+                    <a
+                        href="https://github.com/NicollasRezende/Pokedex/tree/main"
+                        target="_blank"
+                    >
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <button id="prevButton" class="nav-button left"><i class="fas fa-chevron-left"></i></button>
+            <button id="nextButton" class="nav-button right"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <p>
+                Minhas principais ferramentas e tecnologias com as quais tenho
+                experiência.
+            </p>
+            <div class="skill-icons">
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5"
+                    /><span>HTML5</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="CSS3"
+                    /><span>CSS3</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript"
+                    /><span>JavaScript</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js"
+                    /><span>Node.js</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
+                        alt="Flask"
+                    /><span>Flask</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                        alt="Django"
+                    /><span>Django</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                        alt="Bootstrap"
+                    /><span>Bootstrap</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                        alt="Express.js"
+                    /><span>Express.js</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                        alt="MySQL"
+                    /><span>MySQL</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                        alt="PostgreSQL"
+                    /><span>PostgreSQL</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                        alt="Docker"
+                    /><span>Docker</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                        alt="NumPy"
+                    /><span>NumPy</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                        alt="Git"
+                    /><span>Git</span>
+                </div>
+                <div class="icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                        alt="Python"
+                    /><span>Python</span>
+                </div>
+            </div>
+        </section>
+
+        <div id="contact">
+            <h2 id="contact-title">Contato</h2>
+            <p>
+                Entre em contato comigo através das redes sociais ou pelo
+                WhatsApp.
+            </p>
+            <div class="contact-buttons">
+                <a
+                    href="mailto:nicollaspereirarezende@outlook.com.br"
+                    target="_blank"
+                    class="contact-btn"
+                >
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/nicollas-pereira-562689283/"
+                    target="_blank"
+                    class="contact-btn"
+                >
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a
+                    href="https://www.instagram.com/nikz_yo/"
+                    target="_blank"
+                    class="contact-btn"
+                >
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a
+                    href="https://wa.me/5561991769500"
+                    target="_blank"
+                    class="contact-btn"
+                >
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Nicollas Rezende</p>
+                <div class="footer-socials">
+                    <a href="https://www.instagram.com/nikz_yo/" target="_blank"
+                        ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/nicollas-pereira-562689283/"
+                        target="_blank"
+                        ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a href="https://wa.me/5561991769500" target="_blank"
+                        ><i class="fab fa-whatsapp"></i
+                    ></a>
+                    <a
+                        href="mailto:nicollaspereirarezende@outlook.com.br"
+                        target="_blank"
+                        ><i class="fas fa-envelope"></i
+                    ></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
